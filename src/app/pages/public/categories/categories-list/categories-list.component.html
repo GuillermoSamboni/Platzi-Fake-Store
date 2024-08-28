@@ -1,0 +1,10 @@
+<section class=" mx-auto py-10">
+  <section
+    class="flex justify-center gap-4 flex-wrap lg:max-w-screen-xl w-full sm:px-0 px-4 mx-auto"
+  >
+    @for (category of categoriesStateImpl.stateList().items; track category.id)
+    {
+    <app-category-item [category]="category"></app-category-item>
+    }
+  </section>
+</section>
