@@ -5,6 +5,7 @@ import { ProductsListComponent } from "./products/products-list/products-list.co
 import { ProductDetailComponent } from "./products/product-detail/product-detail.component";
 import { DevComponent } from "./dev/dev.component";
 import { CategoriesListComponent } from "./categories/categories-list.component";
+import { AuthGuard } from "../../shared/guards/auth-guard.guard";
 
 export const publicRoutes: Routes = [
   {
@@ -14,6 +15,7 @@ export const publicRoutes: Routes = [
       { path: 'product-view/:id', component: ProductDetailComponent },
       { path: 'categories-list', component: CategoriesListComponent },
       { path: 'dev', component: DevComponent },
+      { path: 'cart-list', canActivate: [AuthGuard], component: DevComponent },
     ]
   },
 ];
