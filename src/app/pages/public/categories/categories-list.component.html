@@ -1,4 +1,9 @@
-<section class=" mx-auto py-10">
+<div class=" py-10">
+  @switch (categoriesStateImpl.stateList().status) { @case ('loading') {
+  <app-loader-spinner></app-loader-spinner>
+  } @case ('error') {
+  <app-error-message></app-error-message>
+  } @default {
   <section
     class="flex justify-center gap-4 flex-wrap lg:max-w-screen-xl w-full sm:px-0 px-4 mx-auto"
   >
@@ -7,4 +12,5 @@
     <app-category-item [category]="category"></app-category-item>
     }
   </section>
-</section>
+  } }
+</div>
