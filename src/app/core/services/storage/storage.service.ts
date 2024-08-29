@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import ProductCart from "../../interfaces/product-cart.interface";
+import ProductCart from "@core/interfaces/products/product-cart.interface";
 
 @Injectable()
 export default class StorageService {

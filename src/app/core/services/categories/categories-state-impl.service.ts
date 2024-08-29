@@ -1,9 +1,9 @@
 import { inject, Inject } from "@angular/core";
 import { signalSlice } from "ngxtension/signal-slice";
 import { catchError, map, of } from "rxjs";
+import StateListGeneric from "@core/interfaces/states/state-list-generic.interface";
+import Category from "@shared/models/category.interface";
 import CategoriesService from "./categories.service";
-import StateListGeneric from "../../interfaces/state-list-generic.interface";
-import Category from "../../../shared/models/category.interface";
 
 @Inject({
   providedIn: 'root'

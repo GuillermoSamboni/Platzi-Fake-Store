@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './loader-spinner.component.html',
   styles: ``
 })
-export class LoaderSpinnerComponent {
+export default class LoaderSpinnerComponent {
 
 }

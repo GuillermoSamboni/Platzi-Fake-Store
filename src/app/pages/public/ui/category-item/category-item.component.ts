@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import Category from '../../../../shared/models/category.interface';
+import Category from '@shared/models/category.interface';
 
 @Component({
   selector: 'app-category-item',
@@ -8,6 +8,6 @@ import Category from '../../../../shared/models/category.interface';
   templateUrl: './category-item.component.html',
   styles: ``
 })
-export class CategoryItemComponent {
+export default class CategoryItemComponent {
   category = input.required<Category>()
 }

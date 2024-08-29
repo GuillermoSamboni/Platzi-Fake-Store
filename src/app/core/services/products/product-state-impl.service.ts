@@ -1,8 +1,8 @@
 import { inject, Injectable } from "@angular/core";
-import { ProductsService } from "./products.service";
-import { StateProductView } from "../../interfaces/state-product.interface";
+import ProductsService from "./products.service";
 import { signalSlice } from "ngxtension/signal-slice";
 import { catchError, map, Observable, of, switchMap } from "rxjs";
+import { StateProductView } from "@core/interfaces/products/state-product.interface";
 
 @Injectable()
 export default class ProductStateImplService {

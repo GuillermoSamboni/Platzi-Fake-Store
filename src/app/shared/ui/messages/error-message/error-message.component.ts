@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './error-message.component.html',
   styles: ``
 })
-export class ErrorMessageComponent {
+export default class ErrorMessageComponent {
 
 }

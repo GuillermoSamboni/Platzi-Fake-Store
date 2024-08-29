@@ -1,4 +1,4 @@
-import Product from "../../shared/models/product.interface";
+import Product from "@shared/models/product.interface";
 
 export default interface ProductCart {
   product: Product;

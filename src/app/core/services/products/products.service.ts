@@ -1,12 +1,12 @@
 import { Observable } from "rxjs";
-import { BaseHttpClient } from "../../data-access/base-http";
-import Product from "../../../shared/models/product.interface";
 import { Injectable } from "@angular/core";
+import { BaseHttpClient } from "@core/data-access/base-http";
+import Product from "@shared/models/product.interface";
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductsService extends BaseHttpClient {
+export default class ProductsService extends BaseHttpClient {
 
   // fetching get all products and return response
   getAllProducts(): Observable<Product[]> {

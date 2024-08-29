@@ -1,14 +1,14 @@
 import { Component, effect, inject, input, output, signal } from '@angular/core';
-import { ProductsService } from '../../../../core/services/products/products.service';
-import ProductStateImplService from '../../../../core/services/products/product-state-impl.service';
-import { ErrorMessageComponent } from '../../../../shared/ui/messages/error-message/error-message.component';
-import { LoaderSpinnerComponent } from '../../../../shared/ui/loaders/loader-spinner/loader-spinner.component';
 import { RouterLink } from '@angular/router';
-import Product from '../../../../shared/models/product.interface';
-import AuthService from '../../../../core/services/auth/auth.service';
-import ErrorNoAuthComponent from '../../../../shared/ui/messages/error-no-auth/error-no-auth.component';
-import StorageService from '../../../../core/services/storage/storage.service';
-import ProductToItemCart from '../../../../core/mapping/product-to-item-cart.maping';
+import ProductToItemCart from '@core/mapping/product-to-item-cart.maping';
+import AuthService from '@services/auth/auth.service';
+import ProductStateImplService from '@services/products/product-state-impl.service';
+import ProductsService from '@services/products/products.service';
+import StorageService from '@services/storage/storage.service';
+import Product from '@shared/models/product.interface';
+import LoaderSpinnerComponent from '@shared/ui/loaders/loader-spinner/loader-spinner.component';
+import ErrorMessageComponent from '@shared/ui/messages/error-message/error-message.component';
+import ErrorNoAuthComponent from '@shared/ui/messages/error-no-auth/error-no-auth.component';
 
 @Component({
   selector: 'app-product-detail',
